@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Album Cover Search</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="title is-1">Album Cover Search</h1>
+        <div id="controls">
+            <!-- Dropdown -->
+            <div class="select is-warning">
+                <select name="Search Options" id="searchOptions">
+                    <option value="release">Album</option>
+                    <option value="artist">Artist</option>
+                </select>
+            </div>
+
+            <!-- Search Bar -->
+            <input id="searchBar" class="input text is-warning" autocomplete="off" type="text" name="Search Bar"
+                placeholder="Search...">
+            <!-- Radio Buttons -->
+            <input type="radio" id="name" name="searchType" value="name" checked="checked">
+            <label for="name">Name</label>
+            <input type="radio" id="mbid" name="searchType" value="mbid">
+            <label for="mbid">MBID</label>
+
+            <!-- Search button -->
+            <button class="button is-warning">Search</button>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+        </div>
+    </main>
+    <script src="script.js"></script>
+
+    <footer>&copy;2022-2023 Jackson Majewski</footer>
+</body>
+
+</html>
