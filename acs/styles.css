@@ -13,13 +13,12 @@ a {
     text-decoration-line: underline;
 }
 
-.copyrightDate {
+#copyrightDate {
     text-decoration: none;
 }
 
 a:visited {
     color: #4a4a4a;
-
 }
 
 a:hover {
