@@ -334,3 +334,10 @@ document.querySelector('#searchBar').addEventListener("keypress", (e) => {
 });
 button.addEventListener("click", onButtonClick);
 title.addEventListener("click", clearPage);
+
+// Update copyright at the bottom of the page
+let updateCopyright = () => {
+    let date = new Date();
+    document.querySelector('#copyrightText').innerHTML = `&copy;2022-${date.getYear()} Fufihiuse`;
+}
+window.onload = updateCopyright();
