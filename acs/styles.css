@@ -13,6 +13,10 @@ a {
     text-decoration-line: underline;
 }
 
+.copyrightDate {
+    text-decoration: none;
+}
+
 a:visited {
     color: #4a4a4a;
 
